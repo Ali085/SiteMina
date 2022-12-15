@@ -1,0 +1,240 @@
+nav {
+    top: 0;
+    min-width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+
+    .container {
+        max-width: 80%;
+        margin: 0 auto;
+        height: 70px;
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        color: white;
+        align-items: center;
+
+        .hamburger {
+            display: none;
+        }
+
+        .nav-ul {
+            display: flex;
+
+            ul {
+                gap: 30px;
+                color: black;
+                display: flex;
+                font-weight: 600;
+
+                .nav-Card {
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+                }
+                li:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+#blockNav {
+    opacity: 0;
+    min-height: 30vh !important;
+    position: fixed;
+    min-width: 100%;
+    background-color: white;
+    justify-content: flex-end;
+    transition: .2s;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 20px;
+
+        li {
+            font-size: 2rem;
+        }
+    }
+}
+.aboutBlock{
+    position: absolute;
+    background-color: white;
+    // padding: 20px;
+    opacity: 0;
+    transition: .3s;
+    height: 50px;
+    width: 150px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.hoverSS:hover .aboutBlock {
+        opacity: 1;
+}
+#rotate:hover{
+    animation: mymove 2s infinite;
+}
+@keyframes mymove {
+    100% {transform: rotate(180deg);}
+  }
+.blockNav {
+    opacity: 1 !important;
+
+}
+
+@media only screen and (max-width: 850px) {
+    nav {
+        top: 0;
+        width: 100%;
+
+
+        .container {
+            display: flex;
+            align-items: center;
+            display: flex;
+            color: black;
+            font-size: 28px;
+
+            .hamburger {
+                display: flex;
+            }
+        }
+
+        .burgers {
+            display: none;
+        }
+    }
+        .bestsellers {
+            .imgDiv {
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                text-align: center;
+                margin: 0 auto;
+
+                img {
+                    max-width: 90%;
+                }
+
+                h3 {
+                    font-size: 50px;
+                }
+            }
+        }
+
+        .about {
+            min-height: 110vh;
+            width: 100%;
+
+            .aboutDiv {
+                flex-direction: column;
+                align-content: center;
+                align-items: center;
+                gap: 50px;
+
+                div {
+                    max-width: 105% !important;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    img {
+                        max-width: 90% !important;
+                    }
+
+                    h3 {
+                        font-size: 35px;
+                    }
+
+                    p {
+                        font-size: 25px;
+                    }
+
+                    button {
+                        width: 150px;
+                        height: 90px !important;
+                        font-size: 30px !important;
+
+                    }
+                }
+            }
+        }
+
+        .social {
+            display: flex;
+            flex-direction: column;
+
+            .socialDiv {
+                display: flex;
+                flex-direction: column;
+
+                .headerH2 {
+                    text-align: center;
+                    padding: 50px;
+                    font-size: 28px;
+                }
+
+                .socialImg {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        max-width: 66% !important;
+                    }
+                }
+            }
+        }
+
+        footer {
+            min-height: 40vh;
+
+            .footerAll {
+                max-width: 80%;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+                align-items: center;
+
+                .footerDiv {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    gap: 60px;
+
+                    .footerList {
+                        ul {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 20px;
+                        }
+                    }
+                }
+
+                .SocialMedias {
+                    display: flex;
+                    gap: 30px;
+                    padding-top: 30px;
+
+                    svg {
+                        transition: .5s;
+                    }
+
+                    svg:hover {
+                        opacity: 0.6;
+                    }
+                }
+
+            }
+
+        }
+    }

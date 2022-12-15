@@ -1,0 +1,272 @@
+.home {
+    height: 100vh;
+    max-width: 100%;
+    background-image: url(../../assets/img/Rectangle-YZ9P6kWjMnUBNL6W.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeDiv {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    h1 {
+        font-size: 5rem;
+        font-weight: 400;
+        color: white;
+    }
+
+    p {
+        font-size: 22px;
+        color: white;
+        font-weight: 400;
+    }
+
+    button {
+        width: 150px;
+        height: 60px;
+        font-size: 18px;
+        color: rgb(66, 57, 57);
+        border: none;
+    }
+
+    button:hover {
+        color: black;
+    }
+}
+
+.bestsellers {
+    min-height: 120vh;
+    max-width: 100%;
+
+    .bestsellersDiv {
+        display: flex;
+        flex-direction: column;
+
+        .bestHeader {
+            text-align: center;
+
+            h2 {
+                font-size: 55px;
+                font-weight: 400;
+                padding-top: 110px;
+                padding-bottom: 110px;
+            }
+        }
+
+        .imgDiv {
+            display: flex;
+            text-align: center;
+            max-width: 80%;
+            margin: 0 auto;
+
+            img {
+                max-width: 90%;
+            }
+
+            div {
+                h3 {
+                    font-size: 35px;
+                }
+
+                p {
+                    font-size: 30px;
+                }
+
+            }
+        }
+
+        .bestBtn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding-top: 110px;
+            padding-bottom: 110px;
+
+            button {
+                width: 150px;
+                height: 60px;
+                font-size: 18px;
+                color: rgb(66, 57, 57);
+                border: 1px solid gray;
+                transition: .5s;
+            }
+            button:hover{
+                color: white;
+                background-color: purple;
+            }
+        }
+    }
+}
+
+.decor {
+    min-height: 110vh;
+    max-width: 100%;
+    background-image: url(../../assets/img/Untitled-AzGRJwMK6BHxZypJ.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .decorDiv {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+
+        h2 {
+            font-size: 5rem;
+            font-weight: 400;
+            color: white;
+        }
+
+        p {
+            font-size: 22px;
+            color: white;
+            font-weight: 400;
+        }
+
+        button {
+            width: 150px;
+            height: 60px;
+            font-size: 18px;
+            color: rgb(66, 57, 57);
+            border: none;
+        }
+    }
+
+}
+
+.about {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .aboutDiv {
+        max-width: 80%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+
+        div {
+            max-width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            img {
+                max-width: 90%;
+            }
+
+            button {
+                width: 150px;
+                height: 60px;
+                font-size: 18px;
+                color: rgb(66, 57, 57);
+                border: 1px solid gray;
+                transition: .5s;
+            }
+            button:hover{
+                color: white;
+                background-color: purple;
+            }
+        }
+    }
+}
+.sign{
+    min-height: 70vh;
+    width: 100%;
+    align-items: center;
+    background-image: url(../../assets/img/Frame-AGBpDkZaG5cRpbaw.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .signDiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px   ;
+        h2{
+            font-size: 4rem;
+            font-weight: 400;
+            color: white;
+            text-align: center;
+        }
+        input{
+            width: 50%;
+            height: 50px;
+            border: none;
+            opacity: 0.5;
+            font-size: 18px;
+            padding: 10px;
+
+        }
+        button{
+            width: 150px;
+            height: 60px;
+            font-size: 18px;
+            color: rgb(66, 57, 57);
+            border: none;
+            
+        }
+    }
+
+}
+.social{
+    display: flex;
+    flex-direction: column;
+    .socialDiv{
+        display: flex;
+        flex-direction: column;
+        .headerH2{
+            text-align: center;
+            padding: 50px;
+            font-size: 28px;
+        }
+        .socialImg{
+            display: flex;
+            gap: 30px   ;
+            justify-content: center;
+            align-items: center;
+            img{
+                max-width: 25%;
+            }
+        }
+        .socialInsta{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+            a{
+                font-size: 22px;
+                padding-bottom: 120px;
+            }
+        }
+    }
+}

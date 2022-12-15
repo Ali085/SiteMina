@@ -1,0 +1,511 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, a, ol {
+  list-style-type: none !important;
+  text-decoration: none !important;
+}
+
+a {
+  color: inherit;
+}
+
+li, i, button {
+  cursor: pointer;
+}
+
+li:hover {
+  text-decoration: underline;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+footer {
+  min-height: 20vh;
+}
+footer .footerAll {
+  max-width: 80%;
+  margin: 0 auto;
+}
+footer .footerAll .footerDiv {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footerAll .footerDiv .footerList ul {
+  display: flex;
+  gap: 20px;
+}
+footer .footerAll .SocialMedias {
+  display: flex;
+  gap: 30px;
+  padding-top: 30px;
+}
+footer .footerAll .SocialMedias svg {
+  transition: 0.5s;
+}
+footer .footerAll .SocialMedias svg:hover {
+  opacity: 0.6;
+}
+
+nav {
+  top: 0;
+  min-width: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+}
+nav .container {
+  max-width: 80%;
+  margin: 0 auto;
+  height: 70px;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+}
+nav .container .hamburger {
+  display: none;
+}
+nav .container .nav-ul {
+  display: flex;
+}
+nav .container .nav-ul ul {
+  gap: 30px;
+  color: black;
+  display: flex;
+  font-weight: 600;
+}
+nav .container .nav-ul ul .nav-Card {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+nav .container .nav-ul ul li:hover {
+  text-decoration: underline;
+}
+
+#blockNav {
+  opacity: 0;
+  min-height: 30vh !important;
+  position: fixed;
+  min-width: 100%;
+  background-color: white;
+  justify-content: flex-end;
+  transition: 0.2s;
+}
+#blockNav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+}
+#blockNav ul li {
+  font-size: 2rem;
+}
+
+.aboutBlock {
+  position: absolute;
+  background-color: white;
+  opacity: 0;
+  transition: 0.3s;
+  height: 50px;
+  width: 150px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.hoverSS:hover .aboutBlock {
+  opacity: 1;
+}
+
+#rotate:hover {
+  -webkit-animation: mymove 2s infinite;
+          animation: mymove 2s infinite;
+}
+
+@-webkit-keyframes mymove {
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes mymove {
+  100% {
+    transform: rotate(180deg);
+  }
+}
+.blockNav {
+  opacity: 1 !important;
+}
+
+@media only screen and (max-width: 850px) {
+  nav {
+    top: 0;
+    width: 100%;
+  }
+  nav .container {
+    display: flex;
+    align-items: center;
+    display: flex;
+    color: black;
+    font-size: 28px;
+  }
+  nav .container .hamburger {
+    display: flex;
+  }
+  nav .burgers {
+    display: none;
+  }
+  .bestsellers .imgDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .bestsellers .imgDiv img {
+    max-width: 90%;
+  }
+  .bestsellers .imgDiv h3 {
+    font-size: 50px;
+  }
+  .about {
+    min-height: 110vh;
+    width: 100%;
+  }
+  .about .aboutDiv {
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  .about .aboutDiv div {
+    max-width: 105% !important;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .about .aboutDiv div img {
+    max-width: 90% !important;
+  }
+  .about .aboutDiv div h3 {
+    font-size: 35px;
+  }
+  .about .aboutDiv div p {
+    font-size: 25px;
+  }
+  .about .aboutDiv div button {
+    width: 150px;
+    height: 90px !important;
+    font-size: 30px !important;
+  }
+  .social {
+    display: flex;
+    flex-direction: column;
+  }
+  .social .socialDiv {
+    display: flex;
+    flex-direction: column;
+  }
+  .social .socialDiv .headerH2 {
+    text-align: center;
+    padding: 50px;
+    font-size: 28px;
+  }
+  .social .socialDiv .socialImg {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  .social .socialDiv .socialImg img {
+    max-width: 66% !important;
+  }
+  footer {
+    min-height: 40vh;
+  }
+  footer .footerAll {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
+  footer .footerAll .footerDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 60px;
+  }
+  footer .footerAll .footerDiv .footerList ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  footer .footerAll .SocialMedias {
+    display: flex;
+    gap: 30px;
+    padding-top: 30px;
+  }
+  footer .footerAll .SocialMedias svg {
+    transition: 0.5s;
+  }
+  footer .footerAll .SocialMedias svg:hover {
+    opacity: 0.6;
+  }
+}
+.home {
+  height: 100vh;
+  max-width: 100%;
+  background-image: url(../../assets/img/Rectangle-YZ9P6kWjMnUBNL6W.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeDiv {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.homeDiv h1 {
+  font-size: 5rem;
+  font-weight: 400;
+  color: white;
+}
+.homeDiv p {
+  font-size: 22px;
+  color: white;
+  font-weight: 400;
+}
+.homeDiv button {
+  width: 150px;
+  height: 60px;
+  font-size: 18px;
+  color: rgb(66, 57, 57);
+  border: none;
+}
+.homeDiv button:hover {
+  color: black;
+}
+
+.bestsellers {
+  min-height: 120vh;
+  max-width: 100%;
+}
+.bestsellers .bestsellersDiv {
+  display: flex;
+  flex-direction: column;
+}
+.bestsellers .bestsellersDiv .bestHeader {
+  text-align: center;
+}
+.bestsellers .bestsellersDiv .bestHeader h2 {
+  font-size: 55px;
+  font-weight: 400;
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+.bestsellers .bestsellersDiv .imgDiv {
+  display: flex;
+  text-align: center;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.bestsellers .bestsellersDiv .imgDiv img {
+  max-width: 90%;
+}
+.bestsellers .bestsellersDiv .imgDiv div h3 {
+  font-size: 35px;
+}
+.bestsellers .bestsellersDiv .imgDiv div p {
+  font-size: 30px;
+}
+.bestsellers .bestsellersDiv .bestBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+.bestsellers .bestsellersDiv .bestBtn button {
+  width: 150px;
+  height: 60px;
+  font-size: 18px;
+  color: rgb(66, 57, 57);
+  border: 1px solid gray;
+  transition: 0.5s;
+}
+.bestsellers .bestsellersDiv .bestBtn button:hover {
+  color: white;
+  background-color: purple;
+}
+
+.decor {
+  min-height: 110vh;
+  max-width: 100%;
+  background-image: url(../../assets/img/Untitled-AzGRJwMK6BHxZypJ.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.decor .decorDiv {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.decor .decorDiv h2 {
+  font-size: 5rem;
+  font-weight: 400;
+  color: white;
+}
+.decor .decorDiv p {
+  font-size: 22px;
+  color: white;
+  font-weight: 400;
+}
+.decor .decorDiv button {
+  width: 150px;
+  height: 60px;
+  font-size: 18px;
+  color: rgb(66, 57, 57);
+  border: none;
+}
+
+.about {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about .aboutDiv {
+  max-width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.about .aboutDiv div {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about .aboutDiv div img {
+  max-width: 90%;
+}
+.about .aboutDiv div button {
+  width: 150px;
+  height: 60px;
+  font-size: 18px;
+  color: rgb(66, 57, 57);
+  border: 1px solid gray;
+  transition: 0.5s;
+}
+.about .aboutDiv div button:hover {
+  color: white;
+  background-color: purple;
+}
+
+.sign {
+  min-height: 70vh;
+  width: 100%;
+  align-items: center;
+  background-image: url(../../assets/img/Frame-AGBpDkZaG5cRpbaw.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sign .signDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.sign .signDiv h2 {
+  font-size: 4rem;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+}
+.sign .signDiv input {
+  width: 50%;
+  height: 50px;
+  border: none;
+  opacity: 0.5;
+  font-size: 18px;
+  padding: 10px;
+}
+.sign .signDiv button {
+  width: 150px;
+  height: 60px;
+  font-size: 18px;
+  color: rgb(66, 57, 57);
+  border: none;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+}
+.social .socialDiv {
+  display: flex;
+  flex-direction: column;
+}
+.social .socialDiv .headerH2 {
+  text-align: center;
+  padding: 50px;
+  font-size: 28px;
+}
+.social .socialDiv .socialImg {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.social .socialDiv .socialImg img {
+  max-width: 25%;
+}
+.social .socialDiv .socialInsta {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+.social .socialDiv .socialInsta a {
+  font-size: 22px;
+  padding-bottom: 120px;
+}/*# sourceMappingURL=main.css.map */

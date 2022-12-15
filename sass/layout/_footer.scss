@@ -1,0 +1,30 @@
+footer{
+    min-height: 20vh;
+    .footerAll{
+        max-width: 80%;
+        margin: 0 auto;
+        .footerDiv{
+            display: flex;
+            justify-content: space-between;
+            .footerList{
+                ul{
+                    display: flex;
+                    gap: 20px;
+                }
+            }
+        }
+        .SocialMedias{
+            display: flex;
+            gap: 30px;
+            padding-top: 30px;
+            svg{
+                transition: .5s;
+            }
+            svg:hover{
+                opacity: 0.6;
+            }
+        }
+
+    }
+
+}
